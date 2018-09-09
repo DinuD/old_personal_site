@@ -1,0 +1,173 @@
+{% extends 'layout.html' %}
+
+{% block cssjs %}
+<style>
+  @media screen and (max-width: 1024px) {
+    #home {
+      margin: 0 20px;
+    }
+  }
+  @media screen and (min-width: 1024px) {
+    
+  }
+  #logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+  }
+</style>
+{% endblock %}
+
+{% block title %} {{ title }} {% endblock %}
+
+{% block body %}
+
+<section class="section" id="home">
+  <div class="columns">
+    <div class="column is-half is-offset-one-quarter">
+      <div class="container is-fluid has-text-centered">
+        <h2 class="title">About me</h2>
+        <h3 class="subtitle">Just a little introduction</h3>
+      </div>
+      <div class="container is-fluid">
+        <br>
+        <p id="about">
+          Hi! My name is Dinu (as you probably already know). My main interests are tech, programming and gaming. Almost all of my
+          knowledge has been gained online, being a self-taught programmer (or soon-to-be programmer). I can't say that I master
+          any languages currently, but I am constantly trying to improve. I enjoy learning new concepts, I consider myself to be
+          pretty ambitious and I try not to get overwhelmed when doing so. You can find out more about my programming journey down
+          below. On the other hand, I would love to also take up other hobbies such as photography and videography.
+        </p>
+        </div>
+        <br>
+        <img src="{{ url_for('static', filename='images/logo.png') }}" height="134" width="134" id="logo" alt="My logo">
+      </div>
+  </div>
+</section>
+
+<section class="hero is-primary is-bold" id="software">
+  <div class="hero-body">
+    <div class="container">
+      <h1 class="title">
+        Software
+      </h1>
+      <h2 class="subtitle">
+        List of things that I have worked with
+      </h2>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="programming">
+  <div class="columns">
+    <div class="column is-2 is-offset-3">
+      <div class="card">
+        <div class="card-content has-text-centered">
+          <p class="title">Java</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-content has-text-centered">
+          <p class="title">Kotlin</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-content has-text-centered">
+          <p class="title">Python</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-content has-text-centered">
+          <p class="title">C++</p>
+        </div>
+      </div>
+    </div>
+    <div class="column is-2">
+      <div class="card">
+        <div class="card-content has-text-centered">
+          <p class="title">HTML</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-content has-text-centered">
+          <p class="title">CSS</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-content has-text-centered">
+          <p class="title">JS</p>
+        </div>
+      </div>
+    </div>
+    <div class="column is-2">
+      <div class="card">
+        <div class="card-content has-text-centered">
+          <p class="title">Linux</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-content has-text-centered">
+          <p class="title">Raspberry Pi</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-content">
+          <div class="content">
+            You can find some of my projects on my GitHub page.
+          </div>
+          <a href="https://github.com/DinuD" class="card-footer-item button">
+            <span class="icon">
+              <i class="fab fa-github"></i>
+            </span>
+            <span>GitHub</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero is-primary is-bold" id="contact">
+  <div class="hero-body">
+    <div class="container">
+      <h1 class="title">
+        Contact me
+      </h1>
+      <h2 class="subtitle">
+        Get in touch
+      </h2>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <h1 class="title">Contact form coming soon</h1>
+    <br>
+    <h2 class="subtitle">
+      In the meantime, you can contact me on 
+      <a class="button is-primary" href="https://twitter.com/DinuD11">
+        <span class="icon">
+          <i class="fab fa-twitter"></i>
+        </span>
+        <span>Twitter</span>
+        </a>
+    </h2>
+  </div>
+</section>
+<!-- <h4>Hi this is my home. Coming soon</h4>
+
+    <section class="section">
+        <div class="container">
+          <h1 class="title">
+            Hello World
+          </h1>
+          <p class="subtitle">
+            My first website with <strong>Bulma</strong>!
+          </p>
+        </div>
+      </section> -->
+{% endblock %}
